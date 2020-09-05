@@ -1,0 +1,54 @@
+{
+    "name": "dnabatchikov/laravel-ascii-fonts",
+    "description": "laravel-ascii-fonts",
+    "keywords": [
+        "dnabatchikov",
+        "laravel-ascii-fonts"
+    ],
+    "homepage": "https://github.com/dnabatchikov/laravel-ascii-fonts",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Denis Nabatchikov",
+            "email": "denis.nabatchikov@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dnabatchikov\\LaravelAsciiFonts\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dnabatchikov\\LaravelAsciiFonts\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dnabatchikov\\LaravelAsciiFonts\\LaravelAsciiFontsServiceProvider"
+            ],
+            "aliases": {
+                "LaravelAsciiFonts": "Dnabatchikov\\LaravelAsciiFonts\\LaravelAsciiFontsFacade"
+            }
+        }
+    }
+}
