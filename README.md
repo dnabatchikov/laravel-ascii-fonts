@@ -18,7 +18,9 @@ composer require dnabatchikov/laravel-ascii-fonts
 ## Usage
 
 ``` php
-// Usage description here
+$font = 'georgia';
+$string = 'TEST STRING';
+$ascii = (new LaravelAsciiFonts($font, $string))->display();
 ```
 
 ### Testing
