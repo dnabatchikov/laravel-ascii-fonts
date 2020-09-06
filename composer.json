@@ -50,7 +50,7 @@
                 "LaravelAsciiFonts": "Dnabatchikov\\LaravelAsciiFonts\\LaravelAsciiFontsFacade"
             }
         }
-    }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true,
 
